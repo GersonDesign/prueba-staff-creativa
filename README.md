@@ -9,6 +9,16 @@ Tipografía:
 + rubik-medium
 + rubik-regular
 
+
+Manejador de paquetes:
++ npm(NODEJS)
+
+Servidor local:
++ browser-sync
+
+Sistema de control versiones
++ git
+
 Librerías:
 + jQuery
 + Bootstrap
@@ -18,13 +28,6 @@ Librerías:
 Preprocesadores:
 + PUG(HTML)
 + Stylus(CSS)
-
-Servidor local:
-+ browser-sync
-
-Manejador de paquetes:
-+ npm(NODEJS)
-
 
 Paquetes:
 + gulp
