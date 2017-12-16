@@ -1,0 +1,135 @@
+
+@import 'global/fonts'
+@import nib
+
+verdeF 		= #173D4A
+verdeAgua 	= #81D3AE
+blanco 		= #fff
+plomo 		= #4B5057
+
+
+h2
+h3
+h4
+a
+h5
+	font-family 'rubikmedium'
+p
+li
+	color plomo
+	font-family 'rubikregular'
+	font-size 15px	
+	
+.container
+	margin auto
+	width 90%
+
+.navbar
+	background black
+	padding 0 !important
+	.navbar-brand
+		padding 0
+		img
+			height 77px
+	.navbar-nav
+		a
+			color blanco
+			font-family 'rubikregular'
+	button
+		border 1px solid blanco
+		border-radius 5px
+		i
+			color blanco
+		
+
+.landing
+	.blckA
+		background-image url('../img/banner.jpg')
+		background-size cover
+		padding 40px 0 30px 0
+		.description
+			h3
+				color verdeAgua
+			h2
+			p
+				color blanco
+			hr
+				background rgba(255,255,255,0.2)
+				height 2px
+				text-align center 
+				
+
+	.blckB
+		background blanco
+		padding 40px 0 50px 0		
+		.methodology
+			h4
+				color verdeF
+				font-size 22px
+			p
+				margin-top 15px
+			ul
+				padding-left 15px
+			img
+				max-width 100%
+		.contentTeam
+			margin-top 20px
+			.title
+				text-align center
+			.team
+				margin-top 60px
+						
+				&-img
+					text-align center
+					img
+						filter grayscale(100%)
+						height 250px
+						&:hover
+							filter none
+					
+@media screen and (min-width:410px)
+	.landing
+		.blckB
+			.contentTeam
+				article
+					width 320px
+
+@media screen and (max-width:991px)
+	.landing
+		.blckB
+			.methodology
+				article
+					&:nth-of-type(2)
+						margin-top 10px
+			
+
+@media screen and (min-width:992px)
+	.navbar
+		.navbar-collapse
+			justify-content flex-end		
+			
+			width 100%
+			.nav-link
+				padding 0 30% !important
+			li
+				
+				width 30%
+				&:hover
+					border-bottom 5px solid verdeAgua
+					
+	.landing
+		.blckB
+			.methodology
+				align-items center
+				display flex
+				article
+					width 48%
+			.contentTeam
+				.team
+					display flex
+					justify-content  space-around
+
+
+@media screen and (min-width: 1124px)
+	.container
+		width 1024px
